@@ -1,0 +1,38 @@
+{
+  "name": "tweeter",
+  "version": "1.0.0",
+  "description": "Microblogging app",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Largonarco/Tweeter.git"
+  },
+  "author": "Omkar Narayankar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Largonarco/Tweeter/issues"
+  },
+  "homepage": "https://github.com/Largonarco/Tweeter#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.3.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "gridfs-stream": "^1.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.13",
+    "multer": "^1.4.3",
+    "multer-gridfs-storage": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
